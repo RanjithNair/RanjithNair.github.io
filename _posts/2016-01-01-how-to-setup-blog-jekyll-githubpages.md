@@ -24,8 +24,8 @@ There were multiple ways to setup such a blog and i found couple of tools which 
 Since, i was more interested in a minimalist-setup, i went ahead with a theme( [Lanyon](https://github.com/poole/lanyon) ) which was built on Poole. Below are the steps, i did to get it working :-
 
 * Clone the [Git repository](https://github.com/poole/lanyon) to my Github repo.
-* Once that's done, change the repo name to "<your-github-profile-name>.github.io". 
-* Give it a few seconds, and your blog site would be published in the URL - https://www.<your-github-profile-name>.github.io .
+* Once that's done, change the repo name to "\<your-github-profile-name>.github.io". 
+* Give it a few seconds, and your blog site would be published in the URL - https://www.\<your-github-profile-name>.github.io .
 
 ### Customizing Blog
 
