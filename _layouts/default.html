@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
+  {% include google_analytics.html %}
   {% include head.html %}
 
   <body>
@@ -21,6 +21,7 @@
 
       <div class="container content">
         {{ content }}
+        {% include comments.html %}
       </div>
     </div>
 
@@ -43,5 +44,8 @@
         }, false);
       })(document);
     </script>
+    
+    
+
   </body>
 </html>

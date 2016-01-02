@@ -3,28 +3,18 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+* 6 years of professional IT experience, currently working as Technology Lead @ NorthwesternMutual Insurance. 
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+* As part of my work experience in various Fortune 500 companies, donned the role of Web Developer, Technology Lead and Offshore-Onsite Coordinator spanning across multiple technologies. 
 
-There are currently two themes built on Poole:
+* Technology enthusiast and mastered the treasures of various Javascript frameworks like React.js & Backbone, HTML5/CSS3, Node.js alongside the traditional ASP.NET MVC & Java.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+* Specialties: React.js, ASP.NET(MVC), Node.js, Backbone, Java Web Services.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Contact Me
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+* [EMail](mailto:ranjith2112@gmail.com)
+* [GitHub](https://github.com/RanjithNair)
+* [LinkedIn](https://www.linkedin.com/in/ranjith-nair-7b540242)
 
 Thanks for reading!
