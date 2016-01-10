@@ -11,7 +11,7 @@ Now the company policy to lock your computer after certain idle time is your ene
 
 Lets get to the code :-
 
-{% highlight vb %}
+{% highlight PowerShell %}
 'Set the time here - for how long you need this scipt to run
 param($minutes = 60)
 
