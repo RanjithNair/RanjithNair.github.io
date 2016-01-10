@@ -27,7 +27,7 @@ for ($i = 0; $i -lt $minutes; $i++) {
 }
 {% endhighlight %}
 
-Now save this with a ".ps1" format. You can download this script from [here]({{ site.url}}/download/prevent-lock.ps1).
+Now save this with a ".ps1" format. You can download this script from [here](/download/prevent-lock.ps1).
 <div style="overflow: auto;">
 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYpVPzDckwDCjWGmBxPuviLf8tw03cScIzzv6ks438fW-FNR818Q" class="left-align"/>
 Along with this, to be safer i hook up my bluetooth speaker to the laptop so that in case anyone pings on IM or i get a new mail, i don't miss that :)
