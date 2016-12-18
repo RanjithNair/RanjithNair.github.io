@@ -9,7 +9,7 @@ title:               Ranjith Nair - Programming World
 tagline:             'Web Developer'
 description:         '"Live as if you were to die tomorrow. Learn as if you were to live forever." - Gandhi <br/> Sharing learning through blogs.'
 url:                 http:/ranjithnair.github.io
-baseurl:             
+baseurl:
 paginate:            5
 
 # About/contact
@@ -20,5 +20,10 @@ author:
 
 # Custom vars
 version:             1.0.0
+markdown:            kramdown
+kramdown:
+                     input: GFM
+                     syntax_highlighter: rouge
+future:              true
 gems :
   - jekyll-paginate
