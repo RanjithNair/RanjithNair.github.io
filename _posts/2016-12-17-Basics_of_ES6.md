@@ -10,7 +10,7 @@ title: Basics of ES6
 * So if there is any `var` which is declared somewhere in the code and you try to access it before its declaration, it will be set to undefined.
 * For the same case, if you use `let`, its scope is defined within that context. Referencing `let` variables elsewhere will result in error.
 
-![My helpful screenshot]({{ site.url }}/public/images/unexpected_behavior_with_var.PNG)
+![My helpful screenshot](/public/images/unexpected_behavior_with_var.PNG)
 
 * `let` variables cannot be redeclared
 * `const` are read-only constants & must be assigned an initial value.
@@ -50,7 +50,7 @@ let {firstName, lastName} = x;
 
 {% endhighlight %}
 
-![My helpful screenshot]({{ site.url }}/public/images/destructuring_params.PNG)
+![My helpful screenshot](/public/images/destructuring_params.PNG)
 
 
 ### Function Defaults
@@ -68,43 +68,43 @@ function loadProfiles(players = []) {
 }
 {% endhighlight %}
 
-#### Options Object
+### Options Object
 
 * Useful when passing in an object parameter.
 * options parameter can be initialized to empty object within the function definition.
 
-![My helpful screenshot]({{ site.url }}/public/images/Options_object.PNG)
+![My helpful screenshot](/public/images/Options_object.PNG)
 
-#### Using Named parameters
+### Using Named parameters
 
 * Can be used as a replacement for `options` object.
 
-![My helpful screenshot]({{ site.url }}/public/images/named_parameters.PNG)
+![My helpful screenshot](/public/images/named_parameters.PNG)
 
-#### Arguments object
+### Arguments object
 
 * Built in array-like object used for parameters.
 * Used when there are varying number of parameters which can be passed on to the function.
 
-![My helpful screenshot]({{ site.url }}/public/images/arguments_object.PNG)
+![My helpful screenshot](/public/images/arguments_object.PNG)
 
 
-#### Rest parameters
+### Rest parameters
 
 * Denoted by 3 dots and signifies as a pure arguments array.
 * Wont break the function if a new parameter is explicitly added to the function signature.
 * Must always be the last parameter.
 * If the value is not sent, it will be an empty array.
 
-![My helpful screenshot]({{ site.url }}/public/images/rest_param.PNG)
+![My helpful screenshot](/public/images/rest_param.PNG)
 
-#### Spread Operator
+### Spread Operator
 
 * Split an array arguments into individual elements.
 * Syntax is same as Rest parameter except the context where its applied.
 
 
-![My helpful screenshot]({{ site.url }}/public/images/spread_operator.PNG)
+![My helpful screenshot](/public/images/spread_operator.PNG)
 
 ### Template literals
 
@@ -148,13 +148,13 @@ e1.name = "Ram";
 {% endhighlight %}
 
 
-#### Converting functions to objects
+### Converting functions to objects
 
 * For encapsulation, reusability and testability.
 * Can be used in combination with arrow function.
 * Arrow function helps a great deal in tackling with scoping issues in callback.
 
-![My helpful screenshot]({{ site.url }}/public/images/arrow_objects.PNG)
+![My helpful screenshot](/public/images/arrow_objects.PNG)
 
 ### Iterators
 {% highlight js %}
@@ -179,7 +179,7 @@ for(let i of x) {
 }
 {% endhighlight %}
 
-#### Arrow functions
+### Arrow functions
 
 * Converting a simple function to arrow functions
 
