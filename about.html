@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume of Ranjith Nair</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: #334960;
+}
+blockquote {
+  font-size: 1em;
+}
+
+.container{
+  margin-top: 80px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+#photo-header{
+  margin-top: -75px;
+}
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
+  display: inline-block;
+}
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span{
+  color: #334960;
+  opacity: 0.7;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  content: '';
+  display: block;
+}
+
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.box h2{
+  color: #227c74;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#awards,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year,
+#education .year{
+  width: 14%;
+  background: #fff;
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: #eee;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#awards .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #eee;
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+    opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #eee;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
+
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: #334960;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #227c74;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
+
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+    </style>
+    <style type="text/css" media="print">
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+#photo{
+  display: none;
+}
+
+.box {
+  margin-bottom: -10px;
+}
+
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests,
+.job-details,
+.job {
+  page-break-inside: avoid;
+}
+
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
+
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
+
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
+
+#awards .description,
+#education .description,
+.job .details {
+  border: 1px solid #eee;
+}
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.badge {
+  margin: 0;
+}
+
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjKAAAAJDM2Y2ZiOWRhLTM3NTAtNDE1OS1iYzdlLTkzNTM1OTRhMDBiYg.jpg" alt="avatar">
+            </div>
+            <div id="text-header" >
+              <h1>Ranjith Nair<br><span>Technology Architect</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fa fa-user ico"></i> About</h2>
+            <p>Ranjith is a full stack web developer & has 8 years of professional IT experience, currently working as Technology Architect @ NorthwesternMutual Insurance.   As part of his work experience in various Fortune 500 companies, he has donned the role of Web Developer, Technology Lead and Offshore-Onsite Coordinator spanning across multiple technologies.   He is a Technology enthusiast and has mastered the treasures of various Javascript frameworks like React.js & Backbone, HTML5/CSS3, Node.js alongside the traditional ASP.NET MVC & Java.</p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class= "fa fa-suitcase ico"></i> Work Experience</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Infosys</div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.infosys.com" target= "_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;www.infosys.com</a>
+                    </div>
+                    <div class="year">February 2009 – Present</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Technology Lead</div>
+                    <div class="description">
+                      Infosys is a global leader in consulting, technology and next-generation services.  We started as just seven engineers with $250 in start-up funds. Today we’re more than 194,000 people and some $9 billion strong.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Created an adapter to help convert the legacy DAO model code to ADO.NET as part of upgrading VB6 app to VB.NET.</li>
+                        <li class="list-group-item">Oracle Database Optimization - Query optimization via Oracle Enterprise Manager and automating performance testing via QTP scripting.</li>
+                        <li class="list-group-item">Dev Lead for upgrading ASP.NET client website of NorthwesternMutual Insurance to React-Redux SPA.</li>
+                        <li class="list-group-item">Dev Lead for upgrading the backend services of NorthwesternMutual Insurance Client website to Microservice architecture.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- AWARDS -->
+          <div class="box">
+            <h2><i class="fa fa-certificate ico"></i> Awards/Certifications</h2>
+            <ul id="awards" class="clearfix">
+              <li>
+                <div class="year pull-left">February 2009</div>
+                <div class="description pull-right">
+                  <h3>Infosys</h3>
+                  <p><i class="fa fa-trophy ico"></i> Infosys Training - Mainframes</p>
+                  <p><i class="fa fa-trophy ico"></i> Infosys Training - Java</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">March 2012</div>
+                <div class="description pull-right">
+                  <h3>Infosys</h3>
+                  <p><i class="fa fa-trophy ico"></i> Most Valuable Player</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">March 2013</div>
+                <div class="description pull-right">
+                  <h3>Microsoft</h3>
+                  <p><i class="fa fa-trophy ico"></i> Microsoft Certified Professional</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">March 2014</div>
+                <div class="description pull-right">
+                  <h3>Infosys</h3>
+                  <p><i class="fa fa-trophy ico"></i> Most Valuable Player</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h2><i class="fa fa-book ico"></i> Publications</h2>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">Functional Programming in Javascript</div>
+              </div>
+              <div class="panel-body">
+                <div class="year">April 2017</div>
+                <div class="address">
+                  <a href="https://ranjithnair.github.io/Talk-Functional-Programming-JS/#/" target="_blank"><i class="fa fa-globe ico"></i> https://ranjithnair.github.io/Talk-Functional-Programming-JS/#/</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">ReactJS - Time to React</div>
+              </div>
+              <div class="panel-body">
+                <div class="year">May 2017</div>
+                <div class="address">
+                  <a href="https://ranjithnair.github.io/Talk-ReactJS/#/" target="_blank"><i class="fa fa-globe ico"></i> https://ranjithnair.github.io/Talk-ReactJS/#/</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fa fa-bullseye ico"></i> Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+              <div class="title pull-right">913 E KILBOURN AVE, APT32</div>
+              <div class="title  pull-right">Milwaukee WI 53202 US</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">(414) 581-3882</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:ranjith2112@gmail.com" target="_blank">ranjith2112@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
+              <div class="title pull-right">Github</div>
+              <div class="description pull-right"><a href="https://github.com/ranjithnair" target="_blank">ranjithnair</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+              <div class="title only pull-right"><a href="http:&#x2F;&#x2F;ranjithnair.github.io" target="_blank">http:&#x2F;&#x2F;ranjithnair.github.io</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
+              <div class="title pull-right">Linkedin</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;ranjith-nair-7b540242&#x2F;" target="_blank">ranjith-nair-7b540242</a></div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fa fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2004 2008</div>
+                <div class="description pull-right">
+                  <h3>Government Engineering College, Palakkad</h3>
+                  <p><i class= "fa fa-graduation-cap ico"></i> B.Tech (IT)</p>
+                  <p>Information Technology</p>
+                  <p>
+                    GPA: 4.0
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fa fa-tasks ico"></i> Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Programming Languages
+
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">Java</span>
+                <span class="skill badge">Groovy</span>
+                <span class="skill badge">JavaScript (ES6)</span>
+                <span class="skill badge">ASP.NET</span>
+                <span class="skill badge">VB.NET</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Backend
+
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">NodeJS</span>
+                <span class="skill badge">Java Web Services</span>
+                <span class="skill badge">GraphQL</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Frontend
+
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">HTML</span>
+                <span class="skill badge">CSS</span>
+                <span class="skill badge">Sass</span>
+                <span class="skill badge">JQuery</span>
+                <span class="skill badge">Bootstrap</span>
+                <span class="skill badge">ReactJS</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Testing
+
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">JUnit</span>
+                <span class="skill badge">Jasmine</span>
+                <span class="skill badge">Enzyme</span>
+                <span class="skill badge">Jest</span>
+                <span class="skill badge">mocha</span>
+                <span class="skill badge">karma</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Agile Project Management
+
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">Scrum</span>
+                <span class="skill badge">Jira</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Storage
+
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">MySQL</span>
+                <span class="skill badge">MongoDB</span>
+                <span class="skill badge">Oracle</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Operating Systems
+
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">Mac OSX</span>
+                <span class="skill badge">Linux</span>
+                <span class="skill badge">Unix</span>
+                <span class="skill badge">BSD</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Devops
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Docker</span>
+                <span class= "skill badge">Kubernetes</span>
+                <span class= "skill badge">Microservices</span>
+                <span class= "skill badge">AWS</span>
+                <span class= "skill badge">Jenkins</span>
+                <span class= "skill badge">Vagrant</span>
+              </div>
+            </div>
+          </div>
+          <!-- PUBLICATIONS -->
+          <div class="box">
+            <h2><i class="fa fa-book ico"></i> Personal Projects</h2>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">Recruitment System</div>
+              </div>
+              <div class="panel-body">
+                <div class="publisher"><i class= "fa fa-bookmark ico"></i> Web app to assist the recruitment of Software Engineers by presenting a consolidated dashboard of their Git, Stack Overflow , Linkedin and their resume.</div>
+              </div>
+            </div>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">RJ Tube</div>
+              </div>
+              <div class="panel-body">
+                <div class="publisher"><i class= "fa fa-bookmark ico"></i> Progressive Web application for Youtube audio player with streaming support.</div>
+                <div class="address">
+                  <a href="https://rjtube.herokuapp.com" target="_blank"><i class="fa fa-globe ico"></i> https://rjtube.herokuapp.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">Feature Tracker</div>
+              </div>
+              <div class="panel-body">
+                <div class="publisher"><i class= "fa fa-bookmark ico"></i> Firebase app for managing feature releases within a scrum agile team.</div>
+                <div class="address">
+                  <a href="https://featurestracker.herokuapp.com" target="_blank"><i class="fa fa-globe ico"></i> https://featurestracker.herokuapp.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2><i class="fa fa-language ico"></i> Languages</h2>
+            <ul class="list-group">
+              <li class=" list-group-item">English</li>
+              <li class=" list-group-item">Malayalam</li>
+              <li class=" list-group-item">Hindi</li>
+              <li class=" list-group-item">Tamil</li>
+            </ul>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><i class="fa fa-heart ico"></i> Interests</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Running
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">Long-Distance</span>
+                <span class= "interest badge">Marathon</span>
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Music
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">Indian Classical Music</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <h2><i class= "fa fa-check-square ico"></i> References</h2>
+            <blockquote>
+              <div>It is my pleasure to recommend RJ, his performance working as a consultant for NorthwesternMutual Insurance proved that he will be a valuable addition to any company.</div>
+              <footer>
+                <a href="" target= "_blank">Jill Schindler</a>
+              </footer>
+            </blockquote><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
