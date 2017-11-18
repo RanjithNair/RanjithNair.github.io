@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Basics of Jest Testing
+title: Jest Testing patterns in React-Redux applications
 ---
 
-- Jest provides a complete ecosystem for testing. There is No need of extra libraries - Mocha, Sinon, Istanbul, Chai, proxyquire etc. as all present in Jest itself.
+- Jest provides a complete ecosystem for testing. There is no need of extra libraries - Mocha, Sinon, Istanbul, Chai, proxyquire etc. as all are  present in Jest itself.
 
 ### Basic Setup Configurations
 
 - `testMatch `: The glob patterns Jest uses to detect test files. By default it looks for .js and .jsx files inside of __tests__ folders, as well as any files with a suffix of .test or .spec (e.g. Component.test.js or Component.spec.js). It will also find files called test.js or spec.js.
 
 - `setupTestFrameworkScriptFile `: E.g. If you are using EnzymeV2 and React v16, then the configuration of adapter can happen here. https://github.com/airbnb/enzyme/blob/master/docs/installation/README.md
+
+- `setupFiles`
 
 - `coverageReporters`: Default: [“json”, “lcov”, “text”]
 
@@ -26,7 +28,6 @@ title: Basics of Jest Testing
     ]
 }
 ```
-- `setupFiles`
 
 ## Patterns
 
