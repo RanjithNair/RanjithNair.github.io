@@ -3,8 +3,6 @@ layout: post
 title: How to use OAuth with Express in NodeJS
 ---
 
-# How to use OAuth with Express in NodeJS
-
 Often in apps, we need to pull certain information from other services. Consider a scenario where you need to build a web application to assist hiring and recruitment. In such scenario, we often need to pull data from other sources like (*Github, Linkedin, Stack Overflow etc*). One of the best way to handle that transfer of information without compromising on the security is via OAuth. 
 
 The basic steps involved in Oauth are :-
