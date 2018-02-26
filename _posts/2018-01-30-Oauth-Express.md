@@ -7,7 +7,7 @@ Often in apps, we need to pull certain information from other services. Consider
 
 The basic steps involved in Oauth are :-
 
-- Register an application for the service you intend to use within their website. In this example, we would be using Linkedin as an example. Give an appropriate app name and provide the Authorization callback URL as `http://localhost:3001/connect/github/callback`. We will get back to this later. 
+- Register an application for the service you intend to use within their website. In this example, we would be using Github as an example. Give an appropriate app name and provide the Authorization callback URL as `http://localhost:3001/connect/github/callback`. We will get back to this later. 
 - Users from your app are redirected to request their GitHub identity.
 - Users are redirected back to your site by GitHub with the access token.
 - Your app accesses the API with the user's access token.
