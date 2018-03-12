@@ -21,7 +21,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
     So let's create a function to configure our store. You could see that we accept another optional parameter `history` which we need for `react-redux-router`. We will get back to that later. Along with that, we would configure our required middlewares (*like redux thunk, redux dev tools extensions*)
 
-    ```js
+    ```ES6
     import { compose, createStore, applyMiddleware } from 'redux'
     import thunk from 'redux-thunk'
     import rootReducer from './rootReducer'
@@ -111,7 +111,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
 5. At server side, we get the component, which would eventually be rendered by the route and then call its function to populate the store. 
 
-    ```js
+    ```ES6
     app.get('*', (req, res, next) => {
         let responseBody = null
         // Create a new Redux store instance
