@@ -21,45 +21,45 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
     So let's create a function to configure our store. You could see that we accept another optional parameter `history` which we need for `react-redux-router`. We will get back to that later. Along with that, we would configure our required middlewares (*like redux thunk, redux dev tools extensions*)
 
-    ```ES6
+    ```js
     import { compose, createStore, applyMiddleware } from 'redux'
     import thunk from 'redux-thunk'
     import rootReducer from './rootReducer'
     import { routerMiddleware } from 'react-router-redux'
 
     export default function configureStore (initialState, history = null) {
-    /* Middleware
-    * Configure this array with the middleware that you want included
-    */
-    let middleware = [thunk]
+      /* Middleware
+      * Configure this array with the middleware that you want included
+      */
+      let middleware = [thunk]
 
-    if (history) {
-        middleware.push(routerMiddleware(history))
-    }
+      if (history) {
+          middleware.push(routerMiddleware(history))
+      }
 
-    // Add universal enhancers here
-    let enhancers = []
+      // Add universal enhancers here
+      let enhancers = []
 
-    const composeEnhancers =
-        (typeof window !== 'undefined' &&
-        window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
-        compose
-    const enhancer = composeEnhancers(
-        ...[applyMiddleware(...middleware), ...enhancers]
-    )
+      const composeEnhancers =
+          (typeof window !== 'undefined' &&
+          window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
+          compose
+          const enhancer = composeEnhancers(
+            ...[applyMiddleware(...middleware), ...enhancers]
+      )
 
-    // create store with enhancers, middleware, reducers, and initialState
-    const store = createStore(rootReducer, initialState, enhancer)
+      // create store with enhancers, middleware, reducers, and initialState
+      const store = createStore(rootReducer, initialState, enhancer)
 
-    if (module.hot) {
-        // Enable Webpack hot module replacement for reducers
-        module.hot.accept('../reducers', () => {
-        const nextRootReducer = require('../reducers').default
-        store.replaceReducer(nextRootReducer)
-        })
-    }
+      if (module.hot) {
+          // Enable Webpack hot module replacement for reducers
+          module.hot.accept('../reducers', () => {
+            const nextRootReducer = require('../reducers').default
+            store.replaceReducer(nextRootReducer)
+          })
+      }
 
-    return store
+      return store
     }
     ```
 
@@ -111,7 +111,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
 5. At server side, we get the component, which would eventually be rendered by the route and then call its function to populate the store. 
 
-    ```ES6
+    ```js
     app.get('*', (req, res, next) => {
         let responseBody = null
         // Create a new Redux store instance
