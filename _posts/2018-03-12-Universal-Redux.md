@@ -21,7 +21,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
     So let's create a function to configure our store. You could see that we accept another optional parameter `history` which we need for `react-redux-router`. We will get back to that later. Along with that, we would configure our required middlewares (*like redux thunk, redux dev tools extensions*)
 
-    ```
+    ```js
     import { compose, createStore, applyMiddleware } from 'redux'
     import thunk from 'redux-thunk'
     import rootReducer from './rootReducer'
@@ -67,7 +67,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
     Also we will have another check in `componentDidMount` to dispatch the action only if we dont have the data already in redux store. 
 
-    ```
+    ```js
     import React, { Component } from 'react'
     import { connect } from 'react-redux'
     import { bindActionCreators } from 'redux'
@@ -111,7 +111,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
 5. At server side, we get the component, which would eventually be rendered by the route and then call its function to populate the store. 
 
-    ```
+    ```js
     app.get('*', (req, res, next) => {
         let responseBody = null
         // Create a new Redux store instance
@@ -150,7 +150,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
     Here we also get the redux store state which is set to the window object from the server side and then populate redux store at the client side with that data. 
 
-    ```
+    ```js
     import React from 'react'
     import { hydrate } from 'react-dom'
     import { Provider } from 'react-redux'
