@@ -67,7 +67,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
     Also we will have another check in `componentDidMount` to dispatch the action only if we dont have the data already in redux store. 
 
-    ```js
+    ```jsx
     import React, { Component } from 'react'
     import { connect } from 'react-redux'
     import { bindActionCreators } from 'redux'
@@ -150,7 +150,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
     Here we also get the redux store state which is set to the window object from the server side and then populate redux store at the client side with that data. 
 
-    ```js
+    ```jsx
     import React from 'react'
     import { hydrate } from 'react-dom'
     import { Provider } from 'react-redux'
