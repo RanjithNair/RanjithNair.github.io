@@ -1,0 +1,17 @@
+<div id="share">
+
+  <!-- facebook -->
+  <a class="reddit" href="http://www.reddit.com/submit?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}" target="blank"><i class="fab fa-reddit"></i></a>
+
+  <!-- twitter -->
+  <a class="twitter" href="https://twitter.com/intent/tweet?via=ranjith_m&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="blank"><i class="fab fa-twitter"></i></a>
+
+  <a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+
+  <!-- google plus -->
+  <a class="googleplus" href="https://plus.google.com/share?url={{url}}" target="blank"><i class="fab fa-google-plus"></i></a>
+
+  <!-- linkedin -->
+  <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}" target="blank"><i class="fab fa-linkedin"></i></a>
+  
+</div>

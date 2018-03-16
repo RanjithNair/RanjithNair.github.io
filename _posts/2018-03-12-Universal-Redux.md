@@ -7,6 +7,8 @@ Few days back Tyler McGinnis had shared a great video to build a simple Universa
 
 https://medium.com/@tylermcginnis/server-rendering-with-react-and-react-router-e0b7ba37653f
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mZEv4mHsU5E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 I would like to continue on that sample app and walkthrough the steps involved in configuring Redux within it for state management. So, lets straight away dig into it. I would be using Tyler's boilerplate as a starting point.
 
 
@@ -65,7 +67,12 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
 4. At the server side, the fetching of data depends on the route invoked by the user. Inside each of the component which depends on some kind of data from the API, we will have a static function which dispatches the actions to fetch the data and updates the store.
 
-    Also we will have another check in `componentDidMount` to dispatch the action only if we dont have the data already in redux store. 
+So, we have the call to dispatch action at 2 places :-
+
+- **Static function**: This will be called from server side.
+- **ComponentDidMount**: This will be only called at client side provided the server fetch didn't happen/failed. 
+
+    We will have the check in `componentDidMount` to dispatch the action only if we dont have the data already in redux store. 
 
     ```jsx
     import React, { Component } from 'react'
@@ -139,7 +146,7 @@ I would like to continue on that sample app and walkthrough the steps involved i
     })
     ```
 
-6. We pass in the the redux store state to the `AppShell` function which sets the store to the window object so that we can access it at the client side. 
+6. We pass in the the redux store state to the `AppShell` function which sets the store to the window object so that we can access it at the client side. This is one of the easiest way to transfer content from server side to client side. Please be cautious of passing in any sensitive information here. 
 
     `<script>window.__INITIAL_STATE__ = ${serialize(state)}</script>`
 
@@ -180,7 +187,7 @@ Lets summarize the 3 basic steps involved in this :-
 
 * At the server side, get the component being invoked by the route and call the component's static function to populate the redux store. 
 * Set the redux store state to the window object while rendering the server side HTML. 
-* At the client side, get the redux state conent from the window object and create the store with that content at the client side. 
+* At the client side, get the redux state content from the window object and create the store with that content at the client side. 
 
 
 ## Code Repo
