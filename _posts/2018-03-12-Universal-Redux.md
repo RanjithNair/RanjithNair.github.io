@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Configuring Redux in a Universal React App with React Router
+image: /public/images/redux.png
 ---
 
 Few days back Tyler McGinnis had shared a great video to build a simple Universal React app with React Router. If you haven't seen it, i would definitely recommend you to watch it once. It was a great article/video explaining the pain points of configuring a universal react app.
