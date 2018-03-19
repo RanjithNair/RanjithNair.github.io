@@ -68,12 +68,12 @@ I would like to continue on that sample app and walkthrough the steps involved i
 
 4. At the server side, the fetching of data depends on the route invoked by the user. Inside each of the component which depends on some kind of data from the API, we will have a static function which dispatches the actions to fetch the data and updates the store.
 
-So, we have the call to dispatch action at 2 places :-
+    So, we have the call to dispatch action at 2 places :-
 
-- **Static function**: This will be called from server side.
-- **ComponentDidMount**: This will be only called at client side provided the server fetch didn't happen/failed. 
+    - **Static function**: This will be called from server side.
+    - **ComponentDidMount**: This will be only called at client side provided the server fetch didn't happen/failed. 
 
-    We will have the check in `componentDidMount` to dispatch the action only if we dont have the data already in redux store. 
+        We will have the check in `componentDidMount` to dispatch the action only if we dont have the data already in redux store. 
 
     ```jsx
     import React, { Component } from 'react'
@@ -136,6 +136,7 @@ So, we have the call to dispatch action at 2 places :-
         )
         const activeRoute = routes.find((route) => matchPath(req.url, route)) || {}
         if (activeRoute.component && activeRoute.component.fetchData) {
+        // calling the static method of the component to populate store
             activeRoute.component.fetchData(store).then(() => {
                 responseBody = AppShell(store.getState(), markup)
                 res.send(responseBody)
