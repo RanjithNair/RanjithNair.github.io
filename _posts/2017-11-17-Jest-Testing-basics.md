@@ -32,19 +32,19 @@ title: Jest Testing patterns in React-Redux applications
 
 - `coverageReporters`: Default: [“json”, “lcov”, “text”]
 
- ```
-"jest": {
-    "collectCoverage": true,
-    "setupTestFrameworkScriptFile": "./setupTests.js",
-    "setupFiles": [
-      "./setup.js"
-    ],
-    "testPathIgnorePatterns": [
-      "./node_modules/",
-      "./build/"
-    ]
-}
-```
+  ```
+  "jest": {
+      "collectCoverage": true,
+      "setupTestFrameworkScriptFile": "./setupTests.js",
+      "setupFiles": [
+        "./setup.js"
+      ],
+      "testPathIgnorePatterns": [
+        "./node_modules/",
+        "./build/"
+      ]
+  }
+  ```
 
 ## Patterns
 
@@ -70,7 +70,7 @@ expect(toJson(component)).toMatchSnapshot()
 
 One of the most easiest way to set props for the component you need to test is by using the React chrome plugin. It has this super cool way to copy props and it's saved to your clipboard as a json which you can then paste in your test file. 
 
-![My helpful screenshot](/public/images/react_chrome_plugin.PNG)
+![My helpful screenshot](/public/images/react_chrome_plugin.png)
 
 ### Redux Stores (HOC/Connected Components)
 ------
