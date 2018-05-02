@@ -123,18 +123,22 @@ I will be using workbox for one of my side project which is built using React wi
 
     ![Workbox initial view](/public/images/workbox-cache-state.png)
 
-You can see that its fetching images, JS/CSS bundles & fonts from cache, thereby drastically reducing the loading time of the app. Do, make sure that whenever you generate JS bundle, you are appending a unique hash to it. Whenever you make any subsequent change, the JS bundle will be created with a new hash and thus the workbox router will go against network to fetch it. 
+    You can see that its fetching images, JS/CSS bundles & fonts from cache, thereby drastically reducing the loading time of the app. Do, make sure that whenever you generate JS bundle, you are appending a unique hash to it. Whenever you make any subsequent change, the JS bundle will be created with a new hash and thus the workbox router will go against network to fetch it. 
 
 8. Now, lets see how our app behaves in offline mode. You will see something like below. 
 
-* First of all the workbox router went against network to fetch the root HTML.
-* As no network as present, it checked whether there was a cached response of the same. 
-* The workbox router responded with a cached response of the same. 
+    * First of all the workbox router went against network to fetch the root HTML.
+    * As no network as present, it checked whether there was a cached response of the same. 
+    * The workbox router responded with a cached response of the same. 
 
     ![Workbox initial view](/public/images/workbox-offline-mode.png)
 
-So you could see that your app is fully functional even when there is no network connection. 
+    So you could see that your app is fully functional even when there is no network connection. 
 
 9. Finally, lets see whats the PWA lighthouse score for our app. Along with workbox, several other factors are also responsbile for that high score. 
 
     ![Workbox initial view](/public/images/PWA_Score.png)
+
+## Resources
+
+* https://developers.google.com/web/tools/workbox/
