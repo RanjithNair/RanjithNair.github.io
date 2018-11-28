@@ -18,29 +18,6 @@ As part of this example, lets take an example of Stocktwits API to find the tren
 
     {% gist bccf7fb4053e27f85f5560c84330a5b9 %}
 
-    ```javascript
-    const { RESTDataSource } = require('apollo-datasource-rest')
-    class StockTwitsAPI extends RESTDataSource {
-     constructor() {
-      super()
-      this.baseURL = 'https://api.stocktwits.com/api/2/'
-     }
-
-     async getSymbolInfo (symbol) {
-      const data = await this.get(`https://api.iextrading.com/1.0/stock/${symbol}/quote`)
-      return data
-     }
-
-     async getTrending() {
-      const data = await this.get('trending/symbols.json')
-      const trendingSymbolDetails = data.symbols.filter(item => !item.symbol.includes(".X")).map(item => this.getSymbolInfo(item.symbol))
-      const allData = await Promise.all(trendingSymbolDetails)
-      return allData
-     }
-    }
-    module.exports = StockTwitsAPI
-    ```
-
 3. Lets create the type defs to define the schema and the required queries. In our case we are just creating a single query to return back an array of `Stock` which are trending on Stocktwits. 
 
     ```javascript
@@ -60,17 +37,7 @@ As part of this example, lets take an example of Stocktwits API to find the tren
     ```
 
 4. Lets create the resolvers for each of the queries. Within the resolvers, the `dataSources` will be injected, through which we will be getting the API data. 
-
-    ```javascript
-    const resolvers = {
-     Query: {
-      stocktwitstrending: async (_source, _args, { dataSources }) => {
-       let trendingList = await dataSources.stockTwitsAPI.getTrending() 
-       return trendingList
-      }
-     }
-    }
-    ```
+    {% gist a995c2ff5b0e903afc73d013e3cdb40c %}
 
 5. Finally, lets create our apollo server.
 
@@ -92,7 +59,7 @@ As part of this example, lets take an example of Stocktwits API to find the tren
     })
     ```
 
-Lets start the server and bring up the graphql pplayground to see how the response looks. 
+Lets start the server and bring up the graphql playground to see how the response looks. 
 
 ```
 curl 'http://localhost:4000' -H 'Accept-Encoding: gzip, deflate, br' -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Connection: keep-alive' -H 'DNT: 1' -H 'Origin: http://localhost:4000' --data-binary '{"query":"{stocktwitstrending{symbol,companyName,latestPrice}}"}' --compressed
