@@ -16,6 +16,8 @@ As part of this example, lets take an example of Stocktwits API to find the tren
 
     For this we will create a class which extends `RESTDataSource` from the module `apollo-datasource-rest`. 
 
+    {% gist bccf7fb4053e27f85f5560c84330a5b9 %}
+
     ```javascript
     const { RESTDataSource } = require('apollo-datasource-rest')
     class StockTwitsAPI extends RESTDataSource {
